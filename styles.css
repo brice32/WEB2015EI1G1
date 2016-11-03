@@ -1,0 +1,38 @@
+.droite span{
+    display: inline-block;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: "Roboto",sans-serif;
+    font-weight: lighter;
+}
+.contenant{
+    display: none;
+}
+#langages a{
+    color: #AAAAAA;
+    text-decoration: none;
+    font-size: 48px;
+    width: 100px;
+    margin: 0px auto;
+}
+#langages{
+   text-align: center;
+}
+#langages > *{
+    position:relative;
+}
+#filet{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0px;   
+    border-right: 1px solid white;
+}
+#langages .droite{
+    left: 50%;  
+}
+#langages li.droite+li span{
+    left: 50%;
+}

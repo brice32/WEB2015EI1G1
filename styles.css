@@ -6,6 +6,7 @@ body{
     color: white;
     font-family: "Roboto",sans-serif;
     font-weight: lighter;
+    overflow: hidden;
 }
 .contenant{
     display: none;
@@ -19,8 +20,9 @@ body{
 }
 #langages{
    text-align: center;
+      margin-top: 120px;
 }
-#langages > *{
+#langages > li{
     position:relative;
 }
 #filet{
@@ -31,8 +33,47 @@ body{
     border-right: 1px solid white;
 }
 #langages .droite{
-    left: 50%;  
+    left: 50%; 
+    text-align: left;
 }
-#langages li.droite+li span{
-    left: 50%;
+#langages .droite a{
+    display: inline-block;
 }
+#langages li.droite+li{
+    right: 50%;
+    text-align: right;
+}
+span{
+    border-bottom: 1px white solid;
+    padding: 12px 24px;
+}
+#langages > *{
+    margin-bottom: 48px;
+}
+#title{
+    font-size: 200px;
+    position: absolute;
+    top: 0px;
+}
+#langages  *:hover{
+    color: white;
+}
+#langages *:hover .contenant{
+        display: block;
+        text-align: right;
+        line-height: 150%;
+        min-height: 200px;
+        padding: 12px 24px 60px 24px;
+        background: rgba(255,255,255,0.2);
+        position: fixed;
+        top: 80px;
+        right: 20px;
+        border-right: 1px solid;
+    }
+#langages *:active .contenant h2{
+        position: absolute;
+        left: 12px;
+        bottom: 12px;
+        font-size: 1.4em;
+        color: #DDDDDD;
+    }   
